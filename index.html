@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Subtitle Search Engine</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: #1e1e1e; 
+            font-family: 'Comic Sans MS', cursive, sans-serif; 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #ff4d4d; 
+            color: #fff; 
+            padding: 20px 0;
+            font-family: 'Arial', sans-serif; 
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px; 
+        }
+
+        /* Form styles */
+        .container {
+            max-width: 400px;
+            margin: 20px auto; 
+            background-color: #333; 
+            padding: 20px;
+            border-radius: 15px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+        input[type="text"] {
+            width: calc(100% - 24px); 
+            padding: 12px;
+            border: 2px solid #ff4d4d; 
+            border-radius: 8px; 
+            font-size: 16px;
+            box-sizing: border-box;
+            margin-bottom: 20px; 
+            transition: border-color 0.3s ease;
+            color: #333; 
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff1a1a; 
+        }
+
+        button[type="submit"] {
+            width: 100%; 
+            padding: 12px;
+            background-color: #ff4d4d; 
+            color: #fff; 
+            border: none;
+            border-radius: 8px; 
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            font-family: 'Arial', sans-serif; 
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ff1a1a; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Subtitle Search Engine</h1>
+    </header>
+
+    <div class="container">
+        <form method="POST">
+            <input type="text" name="search_term" placeholder="Enter Movie Subtitle">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
